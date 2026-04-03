@@ -6,14 +6,8 @@
     <title>TurnFlow | Convierte filas en clientes fieles</title>
     <meta
       name="description"
-      content="Sistema de turnos en la nube para ordenar el tráfico, capturar datos autorizados y aumentar la recompra en tus puntos de atención."
+      content="Sistema de turnos cloud para ordenar atención, capturar datos autorizados y aumentar recompra."
     />
-    <meta property="og:title" content="TurnFlow | Convierte filas en clientes fieles" />
-    <meta
-      property="og:description"
-      content="Sin hardware, 100% configurable y listo para crecer con tus sedes."
-    />
-    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,220 +17,138 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="topbar">
-      <p>🚀 Implementación rápida · Sin infraestructura física · Control total del negocio</p>
-    </div>
-
     <header class="site-header">
-      <div class="container nav">
-        <a href="#inicio" class="logo" aria-label="Ir al inicio">
+      <div class="container nav-shell">
+        <a href="index.html" class="logo" aria-label="TurnFlow inicio">
           <span class="logo-mark">TF</span>
           <span>TurnFlow</span>
         </a>
 
-        <nav class="nav-links" aria-label="Principal">
-          <a href="#beneficios">Beneficios</a>
-          <a href="#como-funciona">Cómo funciona</a>
-          <a href="#precios">Precios</a>
-          <a href="#faq">FAQ</a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="index.html" aria-current="page">Inicio</a>
+          <a href="como-funciona.html">Cómo funciona</a>
+          <a href="pricing.html">Pricing</a>
         </nav>
 
-        <a class="btn btn-secondary" href="#cta">Solicitar demo</a>
+        <a class="btn btn-tonal" href="#cta">Solicitar demo</a>
       </div>
     </header>
 
-    <main id="inicio">
-      <section class="hero">
+    <main>
+      <section class="hero section">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">Sistema de turnos inteligente en la nube</p>
-            <h1>Ordena la atención, conoce mejor a tus clientes y vende más en cada sede.</h1>
-            <p class="hero-copy">
-              Centraliza tus turnos, personaliza tipologías de atención, captura datos con autorización de tratamiento y activa estrategias de fidelización con una base de datos propia.
+            <p class="eyebrow">Turnos inteligentes en la nube</p>
+            <h1>Menos filas. Más ventas. Más clientes recurrentes.</h1>
+            <p class="lead">
+              TurnFlow organiza el tráfico en punto de venta, captura datos con autorización y te
+              ayuda a convertir cada visita en una oportunidad de fidelización.
             </p>
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="#cta">Prueba el sistema y mejora tu negocio</a>
-              <a class="btn btn-link" href="#como-funciona">Ver cómo funciona</a>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#cta">Empieza tu prueba</a>
+              <a class="btn btn-text" href="como-funciona.html">Ver cómo funciona</a>
             </div>
-            <ul class="trust-list">
-              <li>✓ Sin proveedor intermediario</li>
-              <li>✓ Sin inversión en hardware</li>
-              <li>✓ Escalable para 1 o 100+ puntos</li>
+
+            <ul class="chips">
+              <li>Sin hardware obligatorio</li>
+              <li>Configuración 100% personalizable</li>
+              <li>Escalable multi-sede</li>
             </ul>
           </div>
 
-          <aside class="card kpi-card" aria-label="Panel de métricas">
-            <p class="card-title">Impacto esperado (referencial)</p>
-            <div class="kpi-grid">
-              <div>
+          <aside class="card metric-panel" aria-label="Métricas">
+            <h2>Impacto operativo esperado</h2>
+            <div class="metric-grid">
+              <article>
                 <strong>-40%</strong>
-                <span>Tiempo de espera percibido</span>
-              </div>
-              <div>
+                <span>espera percibida</span>
+              </article>
+              <article>
                 <strong>+30%</strong>
-                <span>Recompra por clientes recurrentes</span>
-              </div>
-              <div>
+                <span>recompra</span>
+              </article>
+              <article>
                 <strong>100%</strong>
-                <span>Trazabilidad de autorizaciones</span>
-              </div>
-              <div>
-                <strong>0</strong>
-                <span>Equipos físicos obligatorios</span>
-              </div>
+                <span>trazabilidad de consentimiento</span>
+              </article>
+              <article>
+                <strong>24h</strong>
+                <span>tiempo promedio de activación</span>
+              </article>
             </div>
           </aside>
         </div>
       </section>
 
-      <section class="section" id="beneficios">
+      <section class="section">
         <div class="container">
-          <h2>Diseñado para negocios que quieren eficiencia operativa + crecimiento comercial.</h2>
-          <div class="features-grid">
+          <h2>Diseño centrado en conversión y experiencia de atención.</h2>
+          <div class="feature-grid">
             <article class="card">
-              <h3>Flujo de atención estratégico</h3>
-              <p>Configura reglas por tipo de servicio, prioridad y tiempos para cada punto de atención.</p>
+              <h3>Flujo de atención configurable</h3>
+              <p>Define tipologías, prioridades y reglas de asignación por sede o servicio.</p>
             </article>
             <article class="card">
-              <h3>Base de clientes accionable</h3>
-              <p>Organiza información de visitas y recurrencia para campañas de mercadeo y fidelización.</p>
+              <h3>Base de datos propia</h3>
+              <p>Construye audiencias con visitas, recurrencia y autorizaciones de tratamiento.</p>
             </article>
             <article class="card">
-              <h3>Menor riesgo en datos personales</h3>
-              <p>Gestiona autorizaciones y reduce fricciones de cumplimiento en el manejo de información.</p>
+              <h3>Pantalla de atención de marca</h3>
+              <p>Personaliza experiencia visual para reforzar confianza y reducir abandono.</p>
             </article>
             <article class="card">
-              <h3>Experiencia de marca personalizada</h3>
-              <p>Controla cómo se ve la pantalla de atención, mensajes y orden visual frente a tus clientes.</p>
+              <h3>Analítica accionable</h3>
+              <p>Mide demanda por franja, cuellos de botella y oportunidades de upsell.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-alt" id="como-funciona">
-        <div class="container two-col">
+      <section class="section section-alt" id="cta">
+        <div class="container cta-layout">
           <div>
-            <p class="eyebrow">Cómo funciona</p>
-            <h2>Activa TurnFlow en 3 pasos.</h2>
-            <ol class="steps">
-              <li><strong>Configura</strong> tipologías de atención, sedes y datos a capturar.</li>
-              <li><strong>Opera</strong> turnos en tiempo real con total visibilidad del tráfico.</li>
-              <li><strong>Acciona</strong> campañas de retención con tu base de clientes organizada.</li>
-            </ol>
-          </div>
-          <div class="card quote">
-            <p>
-              “Pasamos de filas desordenadas a una operación controlada con datos listos para vender mejor y fidelizar.”
-            </p>
-            <span>— Gerencia de Operaciones, retail multisede</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="precios">
-        <div class="container">
-          <h2>Precios simples para empezar rápido.</h2>
-          <p class="section-intro">Escoge un plan según tu tamaño. Puedes escalar cuando quieras.</p>
-          <div class="pricing-grid">
-            <article class="card pricing-card">
-              <h3>Starter</h3>
-              <p class="price">USD 49<span>/mes</span></p>
-              <ul>
-                <li>1 sede</li>
-                <li>Turnos ilimitados</li>
-                <li>Captura de datos personalizada</li>
-              </ul>
-              <a class="btn btn-secondary" href="#cta">Comenzar ahora</a>
-            </article>
-            <article class="card pricing-card featured">
-              <p class="badge">Más elegido</p>
-              <h3>Growth</h3>
-              <p class="price">USD 149<span>/mes</span></p>
-              <ul>
-                <li>Hasta 5 sedes</li>
-                <li>Panel analítico completo</li>
-                <li>Segmentación para fidelización</li>
-              </ul>
-              <a class="btn btn-primary" href="#cta">Crear cuenta</a>
-            </article>
-            <article class="card pricing-card">
-              <h3>Scale</h3>
-              <p class="price">A medida</p>
-              <ul>
-                <li>Múltiples sedes y equipos</li>
-                <li>Soporte prioritario</li>
-                <li>Acompañamiento de adopción</li>
-              </ul>
-              <a class="btn btn-secondary" href="#cta">Hablar con ventas</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="cta">
-        <div class="container cta-shell">
-          <div class="cta-copy">
-            <p class="eyebrow">Activa tu prueba</p>
-            <h2>Empieza hoy y ordena tu operación en menos de 24 horas.</h2>
-            <p>
-              Déjanos tus datos y te ayudamos a configurar tu flujo ideal para maximizar conversión y fidelización en tus puntos de atención.
+            <p class="eyebrow">Activa TurnFlow hoy</p>
+            <h2>Solicita demo y recibe un plan de implementación en 24 horas.</h2>
+            <p class="lead">
+              Te mostramos cómo adaptar TurnFlow a tu operación actual y empezar a capturar valor
+              desde el primer día.
             </p>
           </div>
 
           <form class="card lead-form" id="lead-form">
             <label for="name">Nombre</label>
-            <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+            <input id="name" name="name" required type="text" placeholder="Tu nombre" />
 
-            <label for="business">Negocio</label>
-            <input id="business" name="business" type="text" placeholder="Nombre del negocio" required />
+            <label for="business">Empresa</label>
+            <input id="business" name="business" required type="text" placeholder="Tu negocio" />
 
-            <label for="email">Correo corporativo</label>
-            <input id="email" name="email" type="email" placeholder="nombre@empresa.com" required />
+            <label for="email">Email corporativo</label>
+            <input id="email" name="email" required type="email" placeholder="nombre@empresa.com" />
 
             <label for="size">Número de sedes</label>
             <select id="size" name="size" required>
-              <option value="" selected disabled>Selecciona una opción</option>
+              <option value="" selected disabled>Selecciona</option>
               <option>1 sede</option>
               <option>2 a 5 sedes</option>
               <option>6 a 20 sedes</option>
               <option>20+ sedes</option>
             </select>
 
-            <button class="btn btn-primary" type="submit">Crear cuenta / Solicitar demo</button>
-            <p class="form-note">Al continuar, aceptas el tratamiento de datos para contacto comercial.</p>
+            <button type="submit" class="btn btn-primary">Solicitar demo</button>
             <p id="form-success" class="form-success" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
-
-      <section class="section section-alt" id="faq">
-        <div class="container faq">
-          <h2>Preguntas frecuentes</h2>
-          <details>
-            <summary>¿Necesito instalar pantallas o equipos especiales?</summary>
-            <p>No. TurnFlow es cloud y funciona con la infraestructura digital que ya tienes.</p>
-          </details>
-          <details>
-            <summary>¿Puedo personalizar qué datos capturo?</summary>
-            <p>Sí. Definimos contigo qué información necesitas según tu estrategia y cumplimiento.</p>
-          </details>
-          <details>
-            <summary>¿Sirve para empresas pequeñas y grandes?</summary>
-            <p>Sí. El sistema escala desde una sola sede hasta operaciones multisede.</p>
-          </details>
-        </div>
-      </section>
     </main>
 
-    <div class="sticky-cta">
-      <p>¿Listo para ordenar tus puntos de atención?</p>
-      <a class="btn btn-primary" href="#cta">Empieza ahora</a>
-    </div>
-
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <p>© 2026 TurnFlow. Sistema de turnos en la nube para negocios que quieren convertir más.</p>
-        <a href="#cta">Contactar ventas</a>
+      <div class="container footer-shell">
+        <p>© 2026 TurnFlow</p>
+        <div>
+          <a href="como-funciona.html">Cómo funciona</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
       </div>
     </footer>
 
