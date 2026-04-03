@@ -4,31 +4,34 @@ Landing page estática enfocada en conversión para TurnFlow, una solución clou
 
 ## Ejecutar localmente
 
-Como es un sitio estático, puedes abrir `index.html` directamente o usar un servidor simple:
+Puedes abrir `index.html` directamente o usar servidor local:
 
 ```bash
 python3 -m http.server 4173
 ```
 
-Luego abre `http://localhost:4173`.
+Luego visita `http://localhost:4173`.
 
-## Despliegue en Vercel
+## Conectar Git + Vercel para deploy automático a producción
 
-1. Instala Vercel CLI (si no lo tienes):
-   ```bash
-   npm i -g vercel
-   ```
-2. Inicia sesión:
-   ```bash
-   vercel login
-   ```
-3. En el directorio del proyecto, ejecuta:
-   ```bash
-   vercel
-   ```
-4. Para promover a producción:
-   ```bash
-   vercel --prod
-   ```
+> Recomendado para que cada push actualizado publique el entorno productivo.
 
-> También puedes conectar el repo desde el dashboard de Vercel para deploy automático por push.
+1. Sube este repositorio a GitHub/GitLab/Bitbucket.
+2. En Vercel, entra a **Add New Project**.
+3. Importa el repositorio.
+4. Framework preset: **Other** (sitio estático).
+5. Build command: vacío.
+6. Output directory: vacío.
+7. Haz clic en **Deploy**.
+8. En **Settings → Domains**, conecta tu dominio productivo.
+
+Desde ese momento, cada push a la rama de producción configurada en Vercel hace deploy automático.
+
+## Deploy manual con Vercel CLI (opcional)
+
+```bash
+npm i -g vercel
+vercel login
+vercel
+vercel --prod
+```
