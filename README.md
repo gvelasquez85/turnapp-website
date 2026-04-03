@@ -22,11 +22,11 @@ Luego visita `http://localhost:4173`.
 4. Framework preset: **Other** (sitio estático).
 5. Build command: vacío.
 6. Output directory: vacío.
-7. Production Branch: `work` (o cambia el workflow a tu rama principal).
+7. Production Branch: `main`.
 8. Haz clic en **Deploy**.
 9. En **Settings → Domains**, conecta tu dominio productivo.
 
-Desde ese momento, cada push a la rama de producción configurada en Vercel hace deploy automático.
+Desde ese momento, cada push a `main` hace deploy automático de producción.
 
 ## Deploy manual con Vercel CLI (opcional)
 
@@ -40,6 +40,6 @@ vercel --prod
 ## Si ves 404 en Vercel
 
 1. Verifica que el proyecto apunta al repositorio correcto y al root del proyecto.
-2. Verifica que la rama de producción exista y tenga `index.html` en la raíz.
+2. Verifica que la rama `main` exista y tenga `index.html` en la raíz.
 3. Confirma que el último deploy fue exitoso en **Vercel → Deployments**.
 4. Reintenta un deploy manual (`vercel --prod`) o haz un nuevo push.
